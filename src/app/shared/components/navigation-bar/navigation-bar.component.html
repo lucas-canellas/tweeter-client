@@ -1,0 +1,53 @@
+<nav class="navigation-bar">
+  <img class="logo" src="assets/tweeter.svg" alt="Logo tweeter" />
+  <ul class="navigation-menu">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <a routerLink="/">Home</a>
+      <div class="curved-border-div"></div>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/explore">Explore</a>
+      <div class="curved-border-div"></div>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/bookmarks">Bookmarks</a>
+      <div class="curved-border-div"></div>
+    </li>
+  </ul>
+  <div>
+    <button class="btn-profile" mat-button [matMenuTriggerFor]="menu">
+      <img class="nav-avatar" src="{{ avatar }}" alt="Avatar">
+      <span>John Doe</span>
+      <i class="material-icons">arrow_drop_down</i>
+    </button>
+    <mat-menu class="flag-menu" #menu="matMenu">
+      <div>
+        <button mat-menu-item>
+          <div class="menu-btn">
+            <i class="material-icons">account_circle</i>
+            <span>My Profile</span>
+          </div>
+        </button>
+        <button mat-menu-item>
+          <div class="menu-btn">
+            <i class="material-icons">group</i>
+            <span>Group Chat</span>
+          </div>
+        </button>
+        <button mat-menu-item>
+          <div class="menu-btn">
+            <i class="material-icons">settings</i>
+            <span>Settings</span>
+          </div>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>
+          <div class="menu-btn">
+            <i class="material-icons" style="color: #EB5757;">logout</i>
+            <span style="color: #EB5757;">Logout</span>
+          </div>
+        </button>
+      </div>
+    </mat-menu>
+  </div>
+</nav>
