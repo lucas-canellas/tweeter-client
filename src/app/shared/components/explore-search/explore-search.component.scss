@@ -1,0 +1,35 @@
+@import './../../../../colors';
+
+.explore-search {
+  display: flex;
+  align-items: center;
+  background-color: $color-background;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px #0000000D;
+  padding: .5rem;
+
+  input {
+    border: none;
+    width: 100%;
+  }
+
+  i {
+    color: $color-icon;
+  }
+
+  button {
+    background-color: $color-primary;
+    border-radius: 4px;
+    color: #FFF;
+    border: none;
+    width: 85px;
+    height: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}

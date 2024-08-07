@@ -5,11 +5,13 @@ import { RouterModule } from '@angular/router';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { ExploreMenuComponent } from './components/explore-menu/explore-menu.component';
+import { ExploreSearchComponent } from './components/explore-search/explore-search.component';
 
 @NgModule({
   declarations: [
     NavigationBarComponent,
-    ExploreMenuComponent
+    ExploreMenuComponent,
+    ExploreSearchComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { ExploreMenuComponent } from './components/explore-menu/explore-menu.com
   ],
   exports: [
     NavigationBarComponent,
-    ExploreMenuComponent
+    ExploreMenuComponent,
+    ExploreSearchComponent
   ]
 })
 export class SharedModule { }
