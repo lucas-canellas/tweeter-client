@@ -4,10 +4,12 @@ import { NavigationBarComponent } from './components/navigation-bar/navigation-b
 import { RouterModule } from '@angular/router';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
+import { ExploreMenuComponent } from './components/explore-menu/explore-menu.component';
 
 @NgModule({
   declarations: [
-    NavigationBarComponent
+    NavigationBarComponent,
+    ExploreMenuComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatDividerModule
   ],
   exports: [
-    NavigationBarComponent
+    NavigationBarComponent,
+    ExploreMenuComponent
   ]
 })
 export class SharedModule { }
