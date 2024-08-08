@@ -6,12 +6,14 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import { ExploreMenuComponent } from './components/explore-menu/explore-menu.component';
 import { ExploreSearchComponent } from './components/explore-search/explore-search.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   declarations: [
     NavigationBarComponent,
     ExploreMenuComponent,
-    ExploreSearchComponent
+    ExploreSearchComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { ExploreSearchComponent } from './components/explore-search/explore-sear
   exports: [
     NavigationBarComponent,
     ExploreMenuComponent,
-    ExploreSearchComponent
+    ExploreSearchComponent,
+    PostComponent
   ]
 })
 export class SharedModule { }
