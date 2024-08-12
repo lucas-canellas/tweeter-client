@@ -7,11 +7,17 @@ body { margin: 0; font-family: "Poppins", sans-serif; background-color: #F2F2F2;
   outline: none;
 }
 
+textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: auto;
   padding: 0 .5rem;
-
 }
 

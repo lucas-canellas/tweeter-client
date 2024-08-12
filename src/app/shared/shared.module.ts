@@ -7,13 +7,15 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ExploreMenuComponent } from './components/explore-menu/explore-menu.component';
 import { ExploreSearchComponent } from './components/explore-search/explore-search.component';
 import { PostComponent } from './components/post/post.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
 
 @NgModule({
   declarations: [
     NavigationBarComponent,
     ExploreMenuComponent,
     ExploreSearchComponent,
-    PostComponent
+    PostComponent,
+    CreatePostComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { PostComponent } from './components/post/post.component';
     NavigationBarComponent,
     ExploreMenuComponent,
     ExploreSearchComponent,
-    PostComponent
+    PostComponent,
+    CreatePostComponent
   ]
 })
 export class SharedModule { }
