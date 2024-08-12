@@ -8,6 +8,7 @@ import { ExploreMenuComponent } from './components/explore-menu/explore-menu.com
 import { ExploreSearchComponent } from './components/explore-search/explore-search.component';
 import { PostComponent } from './components/post/post.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
+import { TrendsComponent } from './components/trends/trends.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
     ExploreMenuComponent,
     ExploreSearchComponent,
     PostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    TrendsComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { CreatePostComponent } from './components/create-post/create-post.compon
     ExploreMenuComponent,
     ExploreSearchComponent,
     PostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    TrendsComponent
   ]
 })
 export class SharedModule { }
