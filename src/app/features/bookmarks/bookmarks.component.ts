@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookmarksComponent implements OnInit {
 
+  filteredValue: string = 'Tweets';
+  menuOptions: string[] = ['Tweets', 'Tweets & replies', 'Media', 'Likes'];
+
   constructor() { }
 
   ngOnInit(): void {

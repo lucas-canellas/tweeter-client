@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExploreComponent implements OnInit {
 
+  filteredValue: string = 'Top';
+  menuOptions: string[] = ['Top', 'Latest', 'People', 'Media'];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  reply: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

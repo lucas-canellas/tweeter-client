@@ -1,7 +1,7 @@
 <div class="explore-menu">
   <ul>
-    <li *ngFor="let option of menuOptions">
-      <div *ngIf="filteredValue === option" class="active-border"></div>
+    <li *ngFor="let option of options">
+      <div *ngIf="currentValue === option" class="active-border"></div>
       <span (click)="filterExplore($event)" [ngStyle]="{'color': getTextColor(option)}">{{ option }}</span>
     </li>
   </ul>
