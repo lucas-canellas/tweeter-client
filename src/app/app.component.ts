@@ -9,16 +9,17 @@ import { filter } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-  currentUrl: string = '';
+  relativePath: string = '';
+  isProfilePath: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
-    ).subscribe((event: any) => {
-      this.currentUrl = event.urlAfterRedirects;
-      console.log(this.currentUrl); // Outputs the full URL
+    ).subscribe(() => {
+      this.relativePath = this.router.url.split('/').slice(1).join('/');
+      this.isProfilePath = !["explore", "bookmarks", ""].includes(this.relativePath);
     });
   }
 }

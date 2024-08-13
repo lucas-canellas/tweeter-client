@@ -1,0 +1,21 @@
+
+<div class="profile">
+  <div class="bg-profile">
+    <img
+      src="https://png.pngtree.com/background/20230614/original/pngtree-wallpaper-of-beach-full-hd-picture-image_3483521.jpg"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div>
+      <app-header-profile></app-header-profile>
+      <br>
+      <div class="profile-content">
+        <app-explore-menu [options]="menuOptions"  [currentValue]="filteredValue"></app-explore-menu>
+        <div>
+          <app-post></app-post>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

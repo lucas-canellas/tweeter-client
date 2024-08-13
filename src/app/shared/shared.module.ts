@@ -9,6 +9,7 @@ import { ExploreSearchComponent } from './components/explore-search/explore-sear
 import { PostComponent } from './components/post/post.component';
 import { CreatePostComponent } from './components/create-post/create-post.component';
 import { TrendsComponent } from './components/trends/trends.component';
+import { HeaderProfileComponent } from './components/header-profile/header-profile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TrendsComponent } from './components/trends/trends.component';
     ExploreSearchComponent,
     PostComponent,
     CreatePostComponent,
-    TrendsComponent
+    TrendsComponent,
+    HeaderProfileComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { TrendsComponent } from './components/trends/trends.component';
     ExploreSearchComponent,
     PostComponent,
     CreatePostComponent,
-    TrendsComponent
+    TrendsComponent,
+    HeaderProfileComponent
   ]
 })
 export class SharedModule { }
